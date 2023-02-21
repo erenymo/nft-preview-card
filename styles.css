@@ -1,0 +1,166 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-background: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-background: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    background-color: var(--Very-dark-blue-main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border-color: var(--Very-dark-blue-line);
+    border-style: none;
+    border-top-style: solid;
+}
+
+.container {
+    background-color: var(--Very-dark-blue-card-background);
+    width: 330px;
+    border-radius: 1rem;
+    padding: 25px;
+}
+
+.image-container {
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+.image-container img{
+    border-radius: 0.5rem;
+    height: 50%;
+    width: 100%;
+}
+
+.content h2 {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+.desc {
+    font-family: 'Outfit', sans-serif;
+    color: var(--Soft-blue);
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.price {
+    display: flex;
+    width: 100%;
+}
+
+.price .eth-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+}
+.price .eth-price img{
+    float: right;
+    width: 12px;
+    height: 20px;
+}
+
+.price .time {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    text-align: right;
+}
+.price .time img {
+    position: relative;
+    left: 58px;
+}
+
+.image-container div {
+    border-radius: 0.5rem;
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 50%) ;
+    top: 0;
+    height: 99%;
+    width: 100%;
+    opacity: 0;
+}
+
+.image-container div:hover {
+    border-radius: 0.5rem;
+    cursor: pointer;
+    opacity: 1;
+}
+.view img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nft-image:hover {
+    cursor: pointer;
+}
+.eth {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--Cyan);
+    margin-left: 8px;
+}
+
+.desc-time {
+    position: relative;
+    left: 65px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--Soft-blue);
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+}
+
+.creator .circle {
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    height: 35px;
+    width: 35px;
+    margin-right: 16px;
+}
+
+.creator .circle img {
+    height: 30px;
+    width: 30px;
+}
+
+.creator .desc {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.name {
+    color: white;
+}
+
+.name:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
